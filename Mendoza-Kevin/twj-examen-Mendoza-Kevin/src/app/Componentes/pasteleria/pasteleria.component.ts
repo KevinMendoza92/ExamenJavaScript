@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {PasteleriaClass} from "../../Clases/PasteleriaClass";
+
 
 @Component({
   selector: 'app-pasteleria',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasteleriaComponent implements OnInit {
 
+  Nombre:string="";
+  Ciudad:string="";
+  Correo:string="";
+
+  Pastelerias: PasteleriaClass[]=[];
+  nuevaPasteleria: PasteleriaClass=new PasteleriaClass();
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  
 
 }
