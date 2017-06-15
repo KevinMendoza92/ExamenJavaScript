@@ -13,6 +13,6 @@ import { PasteleriaComponent } from './Componentes/pasteleria/pasteleria.compone
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [PasteleriaComponent]
 })
 export class AppModule { }
