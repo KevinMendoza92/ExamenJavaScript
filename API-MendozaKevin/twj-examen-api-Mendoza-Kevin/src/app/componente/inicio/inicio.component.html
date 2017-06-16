@@ -1,24 +1,49 @@
 <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="assets/Bootstrap/miEstilo.css">
-<div class="cabecera">
-<div class="container">
-    <br>
-    <br>
-    <h1 align="center">BIENVENIDO</h1>
-    <h2 align="center">Personajes Star Wars</h2>
-    <p align="center">
-    <button  class="btn btn-outline-secondary" (click)="cargarPersonajes() ">
+
+
+
+<div CLASS="cabecera">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="container">
+        <div align="center">
+          <H1>Escuela Politécnica Nacional </H1> <br>
+          <H1>Examen-Tecnologas Web con JajaScript </H1>
+          <br>
+          <h2>Ejercicio API - PERSONAJES DE STAR WARS</h2>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <hr>
+  <div >
+    <div class="container">
       <br>
-      CARGAR PERSONAJES
       <br>
-      <br>
-    </button></p>
-    <div class="row">
-      <div class="col-md-4" *ngFor="let personaje of personajes; let i=index">
-        <app-planeta-star-wars [personaje]="personaje"></app-planeta-star-wars>
+      <h1 align="center">BIENVENIDO</h1>
+      <h2 align="center">Personajes Star Wars</h2>
+      <p align="center">
+        <button  class="btn btn-outline-secondary" (click)="cargarPersonajes() ">
+          <br>
+          CARGAR PERSONAJES
+          <br>
+          <img align="center" src="http://www.starwarsidentities.at/wp-content/uploads/2013/09/dark_vader_trans-800x1006.png" width="150" height="150" alt="boton">
+          <br>
+        </button></p>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let personaje of personajes; let i=index">
+          <app-planeta-star-wars [personaje]="personaje"></app-planeta-star-wars>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
 
 
