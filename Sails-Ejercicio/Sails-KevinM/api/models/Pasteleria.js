@@ -9,14 +9,14 @@
 module.exports = {
   connection: 'localDiskDb',
   attributes: {
-    Nombre:{
+    nombre:{
       type:"string"
     },
-    Ciudad:{
+    ciudad:{
       type:"string"
     },
-    Correo:{
-      type:"email"
+    correo:{
+      type:"string"
     }
   }
 };

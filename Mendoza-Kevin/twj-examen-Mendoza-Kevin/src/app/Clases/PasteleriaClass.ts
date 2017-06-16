@@ -5,11 +5,11 @@ import {EmailValidator} from "@angular/forms";
 export class PasteleriaClass{
 
   constructor(public id?:number,
-              public Nombre?:string,
-              public latitudDondeEmpezo?:number,
-              public longitudDondeEmpezo?:number,
-              public Ciudad?:string,
-              public Correo?:string){
-    this.Nombre=Nombre;
+              public nombre?:string,
+              public ciudad?:string,
+              public correo?:string,
+              public createdAt?:Date,
+              public updateAt?:Date){
+    this.nombre=nombre;
   }
 }

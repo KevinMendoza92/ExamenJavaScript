@@ -1,22 +1,32 @@
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
 <div class="container">
-  <h1>EXAMEN</h1>
-  <h2>BIENVENIDOS</h2>
-  <h2>Pasteleria</h2>
-
+  <h1 align="center">ESCUELA POLITECNICA NACIONAL</h1>
   <div class="row">
     <div class="col-sm-6">
       <div class="form-group">
-
         <label class="col-form-label">
-          Nombre Pasteleria:
+          Ingrese datos de la pasteleria :
         </label>
-        <input class="form-control"
-               placeholder="Ingrese nombre pasteleria nueva"
-               [(ngModel)]="nuevaPasteleria.Nombre" type="text">
+        <br>
+        <input class="form-group"
+               placeholder="Nombre de la panaderia"
+               ngModel="nuevaPasteleria.nombre" type="text">
+        <br>
+        <input class="form-group"
+               placeholder="Ciudad"
+               ngModel="nuevaPasteleria.ciudad" type="text">
+        <br>
+        <input class="form-group"
+               placeholder="Nombre de la panaderia"
+               ngModel="nuevaPasteleria.nombre" type="text">
       </div>
-      <button class="btn btn-primary" (click)="crearUsuario()">Crear Usuario</button>
-      <button class="btn btn-primary" (click)="actualizarUsuario()">Actualizar Lista de Usuarios</button>
+      <button class="btn btn-primary" (click)="crearPasteleria()">Registrar</button>
+      <div class="row">
+        <div class="col-sm-3" *ngFor="let pasteleria of pastelerias">
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
