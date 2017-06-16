@@ -50,5 +50,19 @@ export class PasteleriaComponent implements OnInit {
           console.log("Error", error)
         }
       )
-  }}
+  }
+
+  eliminarPasteleria(id,i){
+
+    this._http.delete("http://localhost:1337/Pasteleria/"+id).subscribe(respuesta=>{
+      let rJson = respuesta.json();
+      console.log("respuesta json:", rJson);
+      this.pastelerias.splice(i,1);
+
+    }, error=>{
+      console.log("error: ", error);
+    });
+  }
+
+}
 

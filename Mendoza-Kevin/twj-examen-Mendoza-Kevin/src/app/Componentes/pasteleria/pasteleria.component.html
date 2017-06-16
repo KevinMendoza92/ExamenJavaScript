@@ -39,8 +39,8 @@
                          placeholder="Ciudad"
                          [(ngModel)]="nuevaPasteleria.ciudad" type="text"><br>
                   <input class="form-control" style="background-color: transparent"
-                         placeholder="Ingrese la Longitud"
-                         [(ngModel)]="nuevaPasteleria.correo" type="text">
+                         placeholder="Correo"
+                         [(ngModel)]="nuevaPasteleria.correo" type="email">
                 </div>
                 <button class="btn btn-primary" (click)="crearPasteleria()">Registrar</button>
                 <br>
@@ -59,10 +59,13 @@
               <img align="center" src="http://www.gifmania.com/Gif-Animados-Alimentos/Imagenes-Alimentos/Pan/Pan-De-Molde/Pan-De-Molde-50454.gif" width="150" height="150" alt="Pasteleria">
               <div class="card-title" style="font: oblique bold 200% fantasy" align="center"> {{pasteleria.nombre}}
                 <div class="card-text" align="left">
-                  <li class="Pan"> ID:  {{pasteleria.id}}<br></li>
-                  <li class="Pan"> Ciudad: {{pasteleria.ciudad}}</li>
-                  <li class="Pan"> Correo: {{pasteleria.correo}}</li>
+                  <p class="Pan"> ID:  {{pasteleria.id}}<br></p>
+                  <p class="Pan"> Ciudad: {{pasteleria.ciudad}}</p>
+                  <p class="Pan"> Correo: {{pasteleria.correo}}</p>
                 </div>
+              </div>
+              <div align="center">
+              <button class="btn btn-danger" (click)="eliminarPasteleria(pasteleria.id,i)"> Eliminar</button>
               </div>
             </div>
           </div>
