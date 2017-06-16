@@ -33,10 +33,22 @@
           <br>
           <img align="center" src="http://www.starwarsidentities.at/wp-content/uploads/2013/09/dark_vader_trans-800x1006.png" width="150" height="150" alt="boton">
           <br>
+
         </button></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <div class="row">
-        <div class="col-md-4" *ngFor="let personaje of personajes; let i=index">
+        <div class="col-sm-3" *ngFor="let personaje of personajes; let i=index">
+          <figure class="figure">
+            <img style="width: 200px; height: 200px" src="{{arregloImagenes[i]}}" class="figure-img img-fluid rounded" alt="{{personaje.name}}">
+            <figcaption class="figure-caption">
           <app-planeta-star-wars [personaje]="personaje"></app-planeta-star-wars>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>
