@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PasteleriaComponent } from './Componentes/pasteleria/pasteleria.component';
+import {HttpModule} from "@angular/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { PasteleriaComponent } from './Componentes/pasteleria/pasteleria.compone
     PasteleriaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [PasteleriaComponent]

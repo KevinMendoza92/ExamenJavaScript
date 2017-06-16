@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="assets/Bootstrap/miEstilo.css">
+<div class="cabecera">
+<div class="container">
+    <br>
+    <br>
+    <h1 align="center">BIENVENIDO</h1>
+    <h2 align="center">Personajes Star Wars</h2>
+    <p align="center">
+    <button  class="btn btn-outline-secondary" (click)="cargarPersonajes() ">
+      <br>
+      CARGAR PERSONAJES
+      <br>
+      <br>
+    </button></p>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let personaje of personajes; let i=index">
+        <app-planeta-star-wars [personaje]="personaje"></app-planeta-star-wars>
+      </div>
+    </div>
+  </div>
+</div>
+
+

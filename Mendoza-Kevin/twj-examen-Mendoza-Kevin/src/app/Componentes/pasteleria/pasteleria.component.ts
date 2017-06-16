@@ -22,7 +22,7 @@ export class PasteleriaComponent implements OnInit {
 
   }
   ngOnInit() {
-    this._http.get('http://localhost:1337/Pasteleria')
+   this._http.get('http://localhost:1337/Pasteleria')
       .subscribe(
         respuesta => {
           let respJson:PasteleriaClass[]= respuesta.json();
@@ -35,6 +35,7 @@ export class PasteleriaComponent implements OnInit {
         }
       )
   }
+
   crearPasteleria() {
     console.log("Datos de la pasteleria");
 
@@ -49,7 +50,5 @@ export class PasteleriaComponent implements OnInit {
           console.log("Error", error)
         }
       )
-  }
-
-}
+  }}
 
